@@ -5,17 +5,12 @@ var rollDice = function:(){
   return randomDiceRoll;
 }
 
-var flipCoin - function() {
-  var randomNumber = Math.random () * 2;
-  var randomInteger = Math.floor (randomNumber),
-  if (randomInteger ==1){
-    return "heads";
-  } else {
-    return "tails";
-  }
-  
-}
 var main = function (input) {
-  var myOutputValue = "hello world";
+  var numberOfWeeks = input;
+  var minutesInAnHour = 60
+  var hoursInADay = 24
+  var daysInAWeek = 7
+  var numberOfMinutes = numberOfWeeks * daysInAWeek * hoursInADay * minutesInAnHour
+  var myOutputValue = "Total number of minutes in " + input + "is" + numberOfMinutes + " weeks";
   return myOutputValue;
 };
